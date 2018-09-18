@@ -9,6 +9,13 @@ end
 
 def assign_rooms(speakers)
   speakers.map_with_index do |speaker, i|
-    "Hello, #{speaker}! You'll be assigned to room #{i}!"
+    "Hello, #{speaker}! You'll be assigned to room #{i+1}!"
+  end
+end
+
+def printer(attendees)
+  attendees.each do |attendee|
+    puts batch_badge_creator(attendee)
+    puts assign_rooms(attendee)
   end
 end
