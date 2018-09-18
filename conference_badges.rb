@@ -8,7 +8,7 @@ def batch_badge_creator(names)
 end
 
 def assign_rooms(speakers)
-  speakers.map_with_index do |speaker, i| 
+  speakers.map_with_index do |speaker, i|
     "Hello, #{speaker}! You'll be assigned to room #{i}!"
   end
 end
